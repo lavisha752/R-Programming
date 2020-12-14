@@ -1,0 +1,50 @@
+Creating matrix 
+x = c()
+y = c()
+
+rownames = c()
+colnames = c()
+
+matrix = c('','')
+1 matrix format
+matrix1 = matrix(x, nrow= 3,ncol = 3, byrow = T, dimnames = list(rownames,colnames))
+2matrices format(array format)
+matrices = array(c(x,y), dim=(3,3,2), byrow = T, dimnames= list(rownames,colnames), matrixname = matrix)
+
+=====================================================================================================================================
+Merging Dataframes
+# Create origin dataframe(
+
+producers <- data.frame(   
+    surname =  c("Spielberg","Scorsese","Hitchcock","Tarantino","Polanski"),    
+    nationality = c("US","US","UK","US","Poland"),    
+    stringsAsFactors=FALSE)
+
+# Create destination dataframe
+movies <- data.frame(    
+    surname = c("Spielberg",
+		"Scorsese",
+                "Hitchcock",
+              	"Hitchcock",
+                "Spielberg",
+                "Tarantino",
+                "Polanski"),    
+    title = c("Super 8",
+    		"Taxi Driver",
+    		"Psycho",
+    		"North by Northwest",
+    		"Catch Me If You Can",
+    		"Reservoir Dogs","Chinatown"),                
+     		stringsAsFactors=FALSE)
+
+# Merge two datasets
+m1 <- merge(producers, movies, by.x = "surname")
+m1
+dim(m1)
+======================================================================================================x=d=s
+x = array(c(1:5))
+x
+y = array(c(6:10))          
+y
+sum = x+y
+sum
